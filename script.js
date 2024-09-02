@@ -40,7 +40,7 @@ else
 {
  arr.pop();
  console.log(arr);
- taskList.innerHTML=arr.map(i=>`<li>${i}</li>`).join('');
+ taskList.innerHTML=arr.appendChild(i=>`<li>${i}</li>`).join('');
  
 
  
