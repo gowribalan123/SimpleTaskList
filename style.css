@@ -1,0 +1,105 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+font-family: 'Arial', sans-serif;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+background: linear-gradient(to right, #6DD5FA, #FF758C);
+color: #333;
+}
+h1{
+    font-size: 40px;
+}
+#taskapp {
+width: 80%;
+height:80vh;
+max-width: 800px;
+margin: 0 auto;
+padding: 20px;
+background-color: #fff;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#taskform input[type="text"]
+{
+
+
+
+width: 50%;
+padding: 15px;
+border: 2px solid #ddd;
+border-radius: 4px;
+margin-top: 20px;
+margin-bottom: 10px;
+margin-right: 10px;
+font-size: 20px;
+}
+
+#b1{
+    margin-right:10px;
+padding:  15px;
+font-size: 20px;
+background-color: #249e16b9;
+color: white;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+#b2{
+    padding:  15px;
+    font-size: 20px;
+background-color: #b60300f0;
+color: white;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+
+
+
+#tasklist  {
+margin-top: 20px;
+
+
+font-size: 18px;
+
+cursor: pointer;
+position: relative;
+padding: 12px 8px 12px 40px;
+background: #c4cfd3;
+font-size: 18px;
+transition: 0.2s;
+text-align: left;
+
+}
+
+/* Style the list items */
+#tasklist  li {
+    list-style-type:decimal; 
+    position: relative; 
+    
+background-color: #f9f9f9;
+margin-top: 10px;
+padding: 10px;
+border-radius: 4px;
+justify-content: space-between;
+ align-items: center;
+cursor: pointer;
+
+}
+
+
+
+
+ 
