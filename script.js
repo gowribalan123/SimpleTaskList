@@ -2,14 +2,14 @@
 
 const taskForm = document.getElementById('taskform');
 
-const taskList = document.getElementById('tasklist');
+
 
 const arr=[];
 // Create a new list item when clicking on the "Add" button
 
 function addTask()
  {
-    const li = document.createElement("li");
+   
     const taskInput = document.getElementById('taskinput').value;
     const t =   document.createTextNode(taskInput);
    
@@ -21,8 +21,10 @@ function addTask()
     else{
         arr.push(taskInput);
         console.log(arr);
-        li.appendChild(t);
-        taskList.appendChild(li);
+      //  li.appendChild(t);
+
+      //  taskList.appendChild(li);
+      updateTaskList();
     }
    
     
@@ -40,7 +42,8 @@ else
 {
  arr.pop();
  console.log(arr);
- taskList.innerHTML=arr.map(i=>`<li>${i}</li>`).join('');
+ updateTaskList();
+ //taskList.innerHTML=arr.map(i=>`<li>${i}</li>`).join('');
  
 
  
@@ -49,3 +52,18 @@ else
 
 
   
+function updateTaskList()
+{
+    const taskList = document.getElementById('tasklist');
+    taskList.innerHTML='';
+
+    arr.forEach((task,index)=>{
+        const li = document.createElement("li");
+      li.textContent=`${index+1}.${task}`;
+    
+      taskList.appendChild(li);
+    })
+
+}
+
+ 
